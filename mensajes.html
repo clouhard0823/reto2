@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2 CLIENTES</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/FuncionesMensaje.js"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html">CLOUD</a></li>
+            <li><a href="clientes.html">CLIENTES</a></li>
+            <li><a href="mensajes.html">MENSAJES</a></li>
+        </ul>
+    </nav>
+    <div class="container mt-3">
+    <div id="resultMensaje"></div>
+    
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary consulta" onclick="consultarMensaje()">Consultar Mensaje</button>
+
+    <div>
+        <br>
+        <label for="id">ID</label>
+        <br>
+        <input type="number" id="id" placeholder="ID">
+        <br>
+        <label for="messagetext">Message Text</label>
+        <br>
+        <input type="text" id="messagetext" placeholder="MESSAGE TEXT">
+       
+       
+        <br>
+
+        <div>
+            <br>
+            <button onclick="GuardarMensaje()" class="btn btn-success">Guardar !</button>
+            <button onclick="EditarMensaje()" class="btn btn-warning">Actualizar !</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
